@@ -9,6 +9,7 @@
 {-# LANGUAGE ScopedTypeVariables        #-}
 {-# LANGUAGE TypeFamilies               #-}
 {-# LANGUAGE ViewPatterns               #-}
+{-# LANGUAGE NoDeriveAnyClass           #-}
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  Diagrams.Attributes

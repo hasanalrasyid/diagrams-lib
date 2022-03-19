@@ -9,6 +9,7 @@
 {-# LANGUAGE StandaloneDeriving         #-}
 {-# LANGUAGE TypeFamilies               #-}
 {-# LANGUAGE ViewPatterns               #-}
+{-# LANGUAGE NoDeriveAnyClass #-}
 
 -----------------------------------------------------------------------------
 -- |
