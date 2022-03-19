@@ -8,6 +8,7 @@
 {-# LANGUAGE TemplateHaskell           #-}
 {-# LANGUAGE TypeFamilies              #-}
 {-# LANGUAGE UndecidableInstances      #-}
+{-# LANGUAGE NoOverloadedStrings       #-}
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  Diagrams.Backend.CmdLine
@@ -230,7 +231,7 @@ helper' = abortOption param $ mconcat
 #if MIN_VERSION_optparse_applicative(0,16,0)
     param = ShowHelpText Nothing
 #else
-    param = ShowHelpText 
+    param = ShowHelpText
 #endif
 
 -- | Apply a parser to the command line that includes the standard

@@ -176,7 +176,9 @@ instance (FT.Measured m a, FT.Measured n b)
 --   beginning which have a combined arc length of at least 5).
 
 newtype SegTree v n = SegTree (FingerTree (SegMeasure v n) (Segment Closed v n))
-  deriving (Eq, Ord, Show, Monoid, Transformable, FT.Measured (SegMeasure v n))
+  deriving (Eq, Ord, Show, Monoid, Transformable)
+
+deriving instance (Ord n, Floating n, Metric v) => FT.Measured (SegMeasure v n) (SegTree v n)
 
 -- Only derive the Semigroup instance for versions of base that
 -- include Semigroup.  This is because the fingertree package has
